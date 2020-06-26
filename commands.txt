@@ -1,5 +1,4 @@
-// commands 
-
+// COMMANDS
 tsc index.ts 
 node index.js 
 // or 
@@ -18,5 +17,11 @@ NOTE: Inference only works if variabe declaration and variable initialization
       let apples;
       apples = 5;
 
+// WHEN TO USE ANNOTATIONS ? 
+> When we declare a variable in one line and initialize it later.
+> When we want a variable to have a type that cannot be inferred.
+> When a function returns "any" type and we need to clarify the value.
 
+// WHEN TO USE INFERENCE ? 
+> ALWAYS!
       

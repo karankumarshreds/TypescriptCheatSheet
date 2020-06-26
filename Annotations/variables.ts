@@ -33,6 +33,18 @@ const logNumber: (i: number) => void = (i: number) => {
 logNumber(10);
 
 
+// WHEN TO USE ANNOTATIONS ? 
+// 1. When a function returns "any" type and we need to clarify the value.
+const json = '{"x": 10, "y":20}';
+const coordinates = JSON.parse(json);
+console.log(coordinates) // {x: 20, y: 20}
+// Both return "any" type, which means the returned value can be of any type.
+/***********************************************************************
+ * NOTE : TypeScript cannot infer ANY type. Hence we will use annotaions.
+ ***********************************************************************/
+// THEREFORE 
+const correctCoordinates: { x: number, y: number } = JSON.parse(json);
+
 
 
 
