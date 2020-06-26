@@ -23,5 +23,7 @@ NOTE: Inference only works if variabe declaration and variable initialization
 > When a function returns "any" type and we need to clarify the value.
 
 // WHEN TO USE INFERENCE ? 
-> ALWAYS!
+> ALWAYS! 
+
+// ALWAYS USE ANNOTAIONS WITH FUNCTIONS 
       
