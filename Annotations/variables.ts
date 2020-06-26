@@ -45,6 +45,19 @@ console.log(coordinates) // {x: 20, y: 20}
 // THEREFORE 
 const correctCoordinates: { x: number, y: number } = JSON.parse(json);
 
+// 2. Varialble whose type cannot be inferred correctly 
+let numbers = [-10, -1, 12];
+// assign number if present else assign false 
+// type inference won't let us assign anything 
+// let numberAboveZero = false; // but the boolean value to this 
+let numberAboveZero: boolean | number = false;
+numbers.forEach(each => {
+    if (each > 0) {
+        numberAboveZero = each;
+    };
+});
+
+
 
 
 
