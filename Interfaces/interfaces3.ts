@@ -14,3 +14,5 @@ const printSummary = (item: Report): void => {
     console.log(item.summary());
 };
 printSummary(cat);
+
+
