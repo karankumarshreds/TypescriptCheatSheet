@@ -3,6 +3,8 @@ tsc index.ts
 node index.js 
 // or 
 ts-node index.ts 
+// to use TypeScipt in a browser
+npm install -g parcel-bundler
 
 // Type annotations: 
 Developers tell TypeScipt the type.
