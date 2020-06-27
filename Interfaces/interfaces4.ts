@@ -26,3 +26,4 @@ const printItemSummary = (item: Report): void => {
 };
 printItemSummary(cat);
 printItemSummary(tiger);
+
