@@ -31,7 +31,7 @@ class ArrayOfAnything<T>{
 const arr = new ArrayOfAnything(['a', 'b'])
 
 /** CASE 2 **/
-// but we can force type as well for any custom type 
+// but we can force/constraint type as well for any custom type 
 class ArrayOfAnytype<T extends boolean | number> {
   collection: T[];
   constructor(array: T[]) {
