@@ -20,5 +20,11 @@ router.get("/", function (req, res) {
 });
 router.post("/", function (req, res) {
     var _a = req.body, email = _a.email, password = _a.password;
-    res.send(email + " and " + password);
+    if (email && password
+        && email === "test@test.com"
+        && password == "password") {
+        req.session.loggedIn = true;
+        return res.redirect("/");
+    }
+    res.send("<h1>Login failed</h1>");
 });

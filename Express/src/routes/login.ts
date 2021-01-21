@@ -33,8 +33,14 @@ router.get("/", (req: Request, res: Response) => {
 
 router.post("/", (req: RequestWithBody, res: Response) => {
   const { email, password } = req.body;
-
-  res.send(`${email} and ${password}`);
+  if (email && password 
+    && email === "test@test.com" 
+    && password == "password"
+    ) {
+    req.session!.loggedIn = true;
+    return res.redirect("/");
+  }
+  res.send(`<h1>Login failed</h1>`);
 });
 
 
