@@ -1,7 +1,9 @@
 import express, { Request, Response } from 'express';
 import { loginRoutes } from './routes/login';
+import bodyParser from 'body-parser';
 
 const app = express();
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req: Request, res: Response) => {
   res.send(`
